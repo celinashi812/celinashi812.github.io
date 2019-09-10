@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+   <title>What to Eat for Dinner</title>
    <meta charset='utf-8'>
 
 </head>
@@ -9,41 +10,37 @@
 
    <h1>What to Eat for Dinner</h1>
 
-<button onclick="dinnerChoice(0)">Peppy</button>
-<button onclick="dinnerChoice(1)">Homey</button>
-<button onclick="dinnerChoice(2)">Spicy</button>
+<button onclick='dinnerChoice(0)'>healthy</button>
+<button onclick='dinnerChoice(1)'>homey</button>
+<button onclick='dinnerChoice(2)'>spicy</button>
 
-<div id="mytextbox"></div>
+<div id='mytextbox'></div>
 
 <!-- JAVASCRIPT STARTS HERE -->
 <script>
 
 function dinnerChoice(value) {
    choiceVal = value;
-   // alert(choiceVal);      an alert
+
    switch (choiceVal) {
       case 0:
-         // alert('a god');
-         document.getElementById ('mytextbox').innerHTML = '<h2>Crepe</h2>';
+         console.log(choiceVal);
+         document.getElementById('mytextbox').innerHTML = 'Salad';
       case 1:
-         // alert('a cat');
-         document.getElementById ('mytextbox').innerHTML = '<h2>Beef Noodles</h2>';
+         console.log(choiceVal);
+         document.getElementById('mytextbox').innerHTML = 'Beef Noodles';
       case 2:
-         document.getElementById ('mytextbox').innerHTML = '<h2>Spicy Chicken</h2>';
-         // alert('a turd');
-         // break;
-      // default:
-      // // incase nothing matches
-      //    alert('a god of course')
+         console.log(choiceVal);
+         document.getElementById('mytextbox').innerHTML = 'Marinated Chicken';
 
    }
 }
 
-function secondFunction() {
-   alert('the button is clicked');
-   console.log('the button is clicked');
-   document.getElementById ('mytextbox').innerHTML = '<h2> now i have two functions</h2>';
-}
+// function secondFunction() {
+//    alert('the button is clicked');
+//    console.log('the button is clicked');
+//    document.getElementById ('mytextbox').innerHTML = '<h2> now i have two functions</h2>';
+// }
 
 </script>
 </body>
