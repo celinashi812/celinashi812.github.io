@@ -7,31 +7,34 @@
 
 <body>
 
-   <h1>Find Yourself</h1>
+   <h1>What to Eat for Dinner</h1>
 
-<button onclick="dateChoice(1)">Click me</button>
-<button onclick="dateChoice(2)">Click me</button>
+<button onclick="dinnerChoice(0)">Peppy</button>
+<button onclick="dinnerChoice(1)">Homey</button>
+<button onclick="dinnerChoice(2)">Spicy</button>
 
-<div id="mytextbox">
+<div id="mytextbox"></div>
 
-</div>
 <!-- JAVASCRIPT STARTS HERE -->
 <script>
 
-function dateChoice(value) {
+function dinnerChoice(value) {
    choiceVal = value;
    // alert(choiceVal);      an alert
    switch (choiceVal) {
       case 0:
-         alert('a god');
+         // alert('a god');
+         document.getElementById ('mytextbox').innerHTML = '<h2>Crepe</h2>';
       case 1:
-         alert('a cat');
+         // alert('a cat');
+         document.getElementById ('mytextbox').innerHTML = '<h2>Beef Noodles</h2>';
       case 2:
-         alert('a turd');
+         document.getElementById ('mytextbox').innerHTML = '<h2>Spicy Chicken</h2>';
+         // alert('a turd');
          // break;
-      default:
-      // incase nothing matches
-         alert('a god of course')
+      // default:
+      // // incase nothing matches
+      //    alert('a god of course')
 
    }
 }
