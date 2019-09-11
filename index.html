@@ -2,47 +2,44 @@
 
 <head>
    <title>What to Eat for Dinner</title>
-   <meta charset='utf-8'>
+   <meta charset="utf-8">
 
-</head>
+   <script>
 
-<body>
+   function dinnerChoice(value) {
+      choiceVal = value;
 
-   <h1>What to Eat for Dinner</h1>
-
-<button onclick='dinnerChoice(0)'>healthy</button>
-<button onclick='dinnerChoice(1)'>homey</button>
-<button onclick='dinnerChoice(2)'>spicy</button>
-
-<div id='mytextbox'></div>
-
-<!-- JAVASCRIPT STARTS HERE -->
-<script>
-
-function dinnerChoice(value) {
-   choiceVal = value;
-
-   switch (choiceVal) {
-      case 0:
-         console.log(choiceVal);
-         document.getElementById('mytextbox').innerHTML = 'Salad';
-      case 1:
-         console.log(choiceVal);
-         document.getElementById('mytextbox').innerHTML = 'Beef Noodles';
-      case 2:
-         console.log(choiceVal);
-         document.getElementById('mytextbox').innerHTML = 'Marinated Chicken';
-
+      switch (choiceVal) {
+         case 0:
+            console.log(choiceVal);
+            text = 'Salad';
+         case 1:
+            console.log(choiceVal);
+            text = 'Beef Noodles';
+         case 2:
+            console.log(choiceVal);
+            text = 'Marinated Chicken'
+      }
+         document.getElementById('mytextbox').innerHTML = text;
    }
-}
 
-// function secondFunction() {
-//    alert('the button is clicked');
-//    console.log('the button is clicked');
-//    document.getElementById ('mytextbox').innerHTML = '<h2> now i have two functions</h2>';
-// }
 
-</script>
-</body>
+            break;
 
-</html>
+            break;
+         default:
+
+      }
+      </script>
+   </head>
+
+   <body>
+      <h1>What to Eat for Dinner</h1>
+
+   <button onclick="dinnerChoice(0)">healthy</button>
+   <button onclick="dinnerChoice(1)">homey</button>
+   <button onclick="dinnerChoice(2)">spicy</button>
+
+   <div id="mytextbox">
+
+   </div>
