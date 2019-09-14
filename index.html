@@ -3,36 +3,51 @@
 <head>
    <title>What to Eat for Dinner</title>
    <meta charset="utf-8">
+</head>
 
+<body>
+   <h1>What to Eat for Dinner</h1>
+
+<button onclick="dinnerChoice(0)">healthy</button>
+<button onclick="dinnerChoice(1)">homey</button>
+<button onclick="dinnerChoice(2)">spicy</button>
+
+<div id="mytextbox">
+
+</div>
    <script>
 
    function dinnerChoice(value) {
       choiceVal = value;
 
-      switch (choiceVal) {
+      switch(choiceVal) {
          case 0:
             console.log(choiceVal);
             text = 'Salad';
+            break;
          case 1:
             console.log(choiceVal);
             text = 'Beef Noodles';
+            break;
          case 2:
             console.log(choiceVal);
             text = 'Marinated Chicken';
+            break;
       }
          document.getElementById('mytextbox').innerHTML = text;
    }
+//    var expr = 'Papayas';
+// switch (expr) {
+//   case 'Oranges':
+//     console.log('Oranges are $0.59 a pound.');
+//     break;
+//   case 'Mangoes':
+//   case 'Papayas':
+//     console.log('Mangoes and papayas are $2.79 a pound.');
+//     // expected output: "Mangoes and papayas are $2.79 a pound."
+//     break;
+//   default:
+//     console.log('Sorry, we are out of ' + expr + '.');
+// }
 
       </script>
-   </head>
-
-   <body>
-      <h1>What to Eat for Dinner</h1>
-
-   <button onclick="dinnerChoice(0)">healthy</button>
-   <button onclick="dinnerChoice(1)">homey</button>
-   <button onclick="dinnerChoice(2)">spicy</button>
-
-   <div id="mytextbox">
-
-   </div>
