@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-
+   <html lang="en">
 <head>
-   <title>What to Eat for Dinner</title>
-   <meta charset="utf-8">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DINNER?</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-   <h1>What to Eat for Dinner</h1>
-
-<button onclick="dinnerChoice(0)">healthy</button>
-<button onclick="dinnerChoice(1)">homey</button>
-<button onclick="dinnerChoice(2)">spicy</button>
+   <h1>WHAT TO EAT FOR DINNER</h1>
+<div class="buttons">
+   <button onclick="dinnerChoice(0)">Feeling Healthy</button>
+   <button onclick="dinnerChoice(1)">Soupy</button>
+   <button onclick="dinnerChoice(2)">Something Spicy</button>
+   <button onclick="dinnerChoice(3)">Oily</button>
+   <button onclick="dinnerChoice(4)">Easy to Eat</button>
+   <button onclick="dinnerChoice(5)">Seafood Mood</button>
+   <button onclick="dinnerChoice(6)">Rice Feel</button>
+   <button onclick="dinnerChoice(7)">Feeling Extra</button>
+   <button onclick="dinnerChoice(8)">I'm Poor</button>
+</div>
 
 <div id="mytextbox">
-
-</div>
-   <script>
+<script>
 
    function dinnerChoice(value) {
       choiceVal = value;
@@ -31,23 +40,35 @@
             break;
          case 2:
             console.log(choiceVal);
-            text = 'Marinated Chicken';
+            text = 'Spicy Marinated Chicken';
+            break;
+         case 3:
+            console.log(choiceVal);
+            text = 'Stir Fried Noodles';
+            break;
+         case 4:
+            console.log(choiceVal);
+            text = 'Dumpling';
+            break;
+         case 5:
+            console.log(choiceVal);
+            text = 'Sushi';
+            break;
+         case 6:
+            console.log(choiceVal);
+            text = 'Fried Rice';
+            break;
+         case 7:
+            console.log(choiceVal);
+            text = 'Hot Pot'
+            break;
+         case 8:
+            console.log(choiceVal);
+            text = 'Instant Noodles';
             break;
       }
          document.getElementById('mytextbox').innerHTML = text;
    }
-//    var expr = 'Papayas';
-// switch (expr) {
-//   case 'Oranges':
-//     console.log('Oranges are $0.59 a pound.');
-//     break;
-//   case 'Mangoes':
-//   case 'Papayas':
-//     console.log('Mangoes and papayas are $2.79 a pound.');
-//     // expected output: "Mangoes and papayas are $2.79 a pound."
-//     break;
-//   default:
-//     console.log('Sorry, we are out of ' + expr + '.');
-// }
 
       </script>
+</div>
